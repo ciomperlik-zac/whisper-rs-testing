@@ -33,7 +33,7 @@ impl SttEngine {
 
         let mut params = FullParams::new(SamplingStrategy::default());
         params.set_initial_prompt("experience");
-        params.set_n_threads(1);
+        params.set_n_threads(8);
 
         state
             .full(params, &samples)
